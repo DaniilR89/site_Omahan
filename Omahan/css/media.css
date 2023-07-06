@@ -1,0 +1,157 @@
+@media (max-width: 1190px){
+    .img__find-bg{
+        display: none;
+    }
+
+    .find__content{
+        text-align: center;
+    }
+
+    .find__content-title{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .find__content-descr{
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .find__content-awards{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1131px){
+
+    .our__wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .our__info{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1097px){
+
+    .why__wrapper{
+        justify-content: center;
+    }
+
+    .why__info{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1092px){
+
+    .across__wrapper{
+        justify-content: center;
+    }
+
+    .across__info{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 973px){
+    .benefits__items{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 720px){
+    /* BURGER MENU */
+
+    .menu-btn{
+       display: inline-block;
+       width: 50px;
+       height: 50px;
+       background-color: transparent;
+       order: 1;
+       border: none;
+       cursor: pointer;
+       position: relative;
+       z-index: 50;
+   }
+
+   .logo{
+       position: relative;
+       z-index: 50;
+   }
+
+   .nav__about{
+        position: relative;
+        z-index: 50;
+   }
+
+   .btn-line{
+       position: absolute;
+       left: 0;
+       width: 100%;
+       background-color: #00D6FA;
+       height: 2px;
+       transition: .3s ease-in;
+   }
+
+   .btn-line:nth-child(1){
+       top: 0;
+   }
+   .btn-line:nth-child(2){
+       top: 20px;
+   }
+   .btn-line:nth-child(3){
+       top: 20px;
+   }
+   .btn-line:nth-child(4){
+       top: 40px;
+   }
+   
+   .menu-open .btn-line:nth-child(1){
+       transform: scaleX(0);
+   }
+   .menu-open .btn-line:nth-child(2){
+       transform: rotate(45deg);
+   }
+   .menu-open .btn-line:nth-child(3){
+       transform: rotate(-45deg);
+   }
+   .menu-open .btn-line:nth-child(4){
+       transform: scaleX(0);
+   }
+
+   .nav__items{
+       position: absolute;
+       z-index: 1;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       top: 0;
+       background-color: #292D2E;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       gap: 30px;
+       transform: translateY(-100%); /*убирается с страницы*/
+       transition: .3s ease-in;
+   }
+
+   .menu-open .nav__items{
+       transform: translateY(0%); /*при клике добавляется бургер меню*/
+   }
+}
+
+@media (max-width: 605px){
+
+    .real__choice{
+        gap: 20px;
+    }
+}
